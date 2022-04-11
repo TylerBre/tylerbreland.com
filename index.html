@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/fonts.css">
     <link rel="stylesheet" href="assets/styles/fontello-embedded.css">
-    <link rel="stylesheet" href="assets/styles/vars.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -26,7 +25,22 @@
                 as well.
             </p>
         </div>
-        <img src="assets/img/tyler-profile.jpg" alt="Image of Tyler Breland">
+        <img
+                srcset="
+                    assets/img/tyler-profile_400.jpg 400w,
+                    assets/img/tyler-profile_336.jpg 336w,
+                    assets/img/tyler-profile_288.jpg 288w,
+                    assets/img/tyler-profile_224.jpg 224w,
+                "
+                sizes="
+                    (min-width: 1280px) 400px,
+                    (min-width: 1024px) 288px,
+                    (min-width: 768px) 224px,
+                    (max-width: 767px) 336px
+                "
+                src="assets/img/tyler-profile_400.jpg"
+                alt="Image of Tyler Breland"
+        >
     </div>
     <div class="content-container">
         <a href="mailto:hello@tylerbreland.com" class="big-button">Get in touch.</a>
