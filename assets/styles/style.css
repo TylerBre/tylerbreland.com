@@ -1,0 +1,121 @@
+:root {
+    --white: #FAF9F9;
+    --pink: #FFD6BA;
+    --blue: #555B6E;
+    --teal: #89B0AE;
+    --teal-light: #BEE3DB;
+    /* fonts */
+    --fredoka-one: 'Fredoka One', cursive;
+    --alice: 'Alice', serif;
+
+/*    */
+    --fonter-height: 10vh;
+}
+
+
+html, body {
+    height: 100%; width: 100%;
+    margin: 0; padding: 0;
+}
+
+body {
+    /* prevent horizontal scroll bar */
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+.content-container {
+    display: flex;
+}
+
+.full-screen-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; height: 100vh;
+    padding-bottom: var(--fonter-height);
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+}
+
+header * {
+    font-family: var(--alice);
+}
+
+header p {
+    flex: 1;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+[aria-label="About Section"] {
+    background: var(--pink);
+}
+
+[aria-label="About Section"] img[alt="Image of Tyler Breland"] {
+    width: 25vh; height: 25vh;
+    border-radius: 50%;
+}
+
+[aria-label="About Section"] h1 {
+    font-family: var(--alice);
+    font-size: 8vw;
+    color: var(--blue);
+}
+
+[aria-label="About Section"] .header-em-dash {
+    color: var(--teal);
+}
+
+[aria-label="About Section"] p {
+    font-size: 2vw;
+}
+
+footer, .footer-push {
+    height: var(--fonter-height);
+}
+
+footer {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    bottom: 0;
+}
+
+/* mobile */
+@media (min-width: 640px) {
+    .content-container {
+        width: 100%;
+        margin: 0 2vw;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+
+}
+
+/* sm desktop */
+@media (min-width: 1024px) {
+    .content-container {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* lg desktop */
+@media (min-width: 1280px) {
+    .content-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
