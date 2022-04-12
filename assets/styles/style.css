@@ -2,7 +2,7 @@
     --white: #fffdf8;
     --black: #3b3e4d;
     --pink: #ffa292;
-    --teal: #89abb0;
+    --teal: #9fbbc0;
     /* fonts */
     --fredoka-one: 'Fredoka One', cursive;
     --alice: 'Alice', serif;
@@ -28,6 +28,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+}
+
+img {
+    user-select: none;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--pink);
 }
 
 a {
